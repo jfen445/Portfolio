@@ -70,7 +70,6 @@
 }
 
 
-
 .background {
   background-color: #EAB2A0;
   clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 70%, 100% 100%, 43% 100%, 13% 72%, 0% 30%);
@@ -106,3 +105,19 @@
   50%  { transform: scale(1,1)    translateY(0); }
   100% { transform: scale(1,1)    translateY(0); }
 }
+
+
+/* @media (max-width:768px)  { 
+  .bg-about {
+    background-color: blue;
+  }
+
+  .left {
+
+    flex: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  }
+} */

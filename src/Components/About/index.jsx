@@ -84,9 +84,9 @@ const About = ({ scrollToProject }) => {
             <i class="devicon-java-plain code-icon"></i>
           </div>
 
-          <p>Other technologies: Git, Express, MongoDB, Azure, Salesforce</p>
+          <p className="hide">Other technologies: Git, Express, MongoDB, Azure, Salesforce</p>
 
-          <SouthIcon className="arrow-icon-about" onClick={() => scrollToProject()} />
+          <SouthIcon className="arrow-icon-about hide" onClick={() => scrollToProject()} />
         </div>
       </div>
     </div>

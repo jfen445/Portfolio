@@ -23,7 +23,9 @@ function App() {
 
   return (
     <div className="App">
-      <Intro scrollToDiv={scrollToDiv} />
+      <div>
+        <Intro scrollToDiv={scrollToDiv} />
+      </div>
       <div ref={scrollRef}>
         <About scrollToProject={scrollToProject} />
       </div>
