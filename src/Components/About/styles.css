@@ -1,0 +1,153 @@
+.container {
+  height: 100vh;
+  display: flex;
+  z-index: 10;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 40%;
+}
+
+.bg-about {
+  background-color: #2D4356;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 40%;
+  background-color: #425566;
+}
+
+.bg {
+  position: absolute;
+  bottom: 8%;
+  left: 30%;
+  background-color: #333;
+}
+
+.info-section {
+  height: 70%;
+  display: flex; 
+  flex-direction: column;
+  color: #eaecee;
+}
+
+.info-section-right {
+  padding-right: 10%;
+  
+}
+
+.info-section-left {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.card {
+  width: 60%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.headshot {
+  background-color: white;
+  border-radius: 50%;
+  height: 40%;
+  margin-left: auto; 
+  margin-right: 0;
+}
+
+.about {
+  text-align: right;
+  color: white;
+  margin-left: 10%;
+}
+
+.info {
+  margin: auto;
+  padding-top: 30%;
+  padding-left: 20%;
+}
+
+p {
+  margin-top: 10px;
+  line-height: 150%;
+}
+
+a {
+  color: #EAB2A0;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  cursor: button;
+}
+
+.icon-section {
+  margin-left: auto; 
+  margin-right: 0;
+}
+
+.code-icon {
+  font-size: 60px;
+}
+
+.coding-section {
+  display: flex;
+  margin: 20px 0;
+  grid-auto-flow: column;
+  grid-column-gap: 20px
+}
+
+.description {
+  color: #fff;
+}
+
+.description em {
+  color: #f79f8c;
+  font-style: normal;
+}
+
+.arrow-icon-about {
+  width: 30px;
+  height: 30px;
+  margin-top: 40px;
+  /* position: absolute;
+  bottom: 20px;
+  right:50%; */
+  border-radius: 50%;
+  color: #f79f8c;
+  outline-color:#f79f8c;
+  outline-style: solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: ease;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1,1)    translateY(0); }
+  10%  { transform: scale(1.1,.9) translateY(0); }
+  30%  { transform: scale(.9,1.1) translateY(-10px); }
+  50%  { transform: scale(1,1)    translateY(0); }
+  100% { transform: scale(1,1)    translateY(0); }
+}

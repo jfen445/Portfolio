@@ -1,0 +1,17 @@
+.container {
+  background-color: white;
+}
+
+.project-bg {
+  background-color: white;
+}
+
+.left-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 40%;
+  background-color: #2D4356;
+}

@@ -1,45 +1,51 @@
-import "./styles.css"
-import profileImage from "../images/profile.jpg"
+import * as React from 'react';
+import './styles.css';
+import profileImage from '../images/profile.jpg';
+import SouthIcon from '@mui/icons-material/South';
+import Typewriter from 'typewriter-effect';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
+import data from './particles.js';
+import { loadSlim } from 'tsparticles-slim';
 
-const Intro = () => {
+const Intro = ({ scrollToDiv }) => {
+  console.log('eaffaaaa', data);
+  // const particlesInit = async (main) => {
+  //   console.log(main);
+  //   console.log('eafeaf');
+  //   console.log(data);
+
+  //   // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  //   // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+  //   // starting from v2 you can add only the features you need reducing the bundle size
+  //   await loadFull(main);
+  // };
+
+  const particlesInit = React.useCallback(async (engine) => {
+    console.log(engine);
+    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    //await loadFull(engine);
+    await loadSlim(engine);
+  }, []);
+
+  const particlesLoaded = React.useCallback(async (container) => {
+    await console.log(container);
+  }, []);
+
   return (
     <div className="container">
-      {/* left component */}
       <div className="left">
-        <div className="left-wrapper">
-          <h2 className="introduction">Hi, my name is</h2>
-          <h1 className="name">Joshua Feng</h1>
-
-          <div className="title">
-            <div className="title-wrapper">
-              <div className="title-item">Software Engineering Sutdent</div>
-              <div className="title-item">Software Engineering Intern @ Clearhead</div>
-            </div>
-          </div>
-
-          <div className="description">
-            <p class="about__description">
-              I am a penultimate year Sofware Engineering Sutdent studying at the University of Auckland.
-            </p>
-
-            <p class="about__description">
-              I have a passion for design and problem solving, and would love to
-              see where it can take me in the future!
-            </p>
-          </div>
+        <Particles id="tsparticles" init={particlesInit} loaded={particlesLoaded} options={data} />
+        <div className="infosection">
+          <div className="intro">JOSHUA FENG</div>
+          <div>New Zealand born Software Developer based in Melbourne, Australia</div>
+          <SouthIcon className="arrow-icon" onClick={() => scrollToDiv()} />
         </div>
-      </div>
-
-      {/* right component */}
-      <div className="right">
-        <div className="background">
-          <img src={profileImage} alt="" className="image"/>
-        </div>
-
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Intro;
-
