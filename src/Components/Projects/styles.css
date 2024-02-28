@@ -21,6 +21,7 @@
 .heading {
   padding-left: 20px;
   padding-top: 20px;
+  padding-bottom: 50px;
 }
 .swiper {
   width: 80%;
@@ -43,8 +44,17 @@
   height: 75vh !important;
 }
 
+/* @media (min-width:325px)  { 
+  .swiper-slide img {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+} */
+
 .swiper-slide img {
-  display: block;
+  display: flex;
   width: 50%;
   height: 50%;
   object-fit: cover;

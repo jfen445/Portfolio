@@ -3,6 +3,7 @@ import * as React from 'react';
 import Intro from './Components/Intro';
 import About from './Components/About';
 import Projects from './Components/Projects';
+import Outro from './Components/Outro';
 
 function App() {
   const scrollRef = React.useRef();
@@ -31,6 +32,9 @@ function App() {
       </div>
       <div ref={projectRef}>
         <Projects scrollRef={projectRef} />
+      </div>
+      <div>
+        <Outro />
       </div>
     </div>
   );

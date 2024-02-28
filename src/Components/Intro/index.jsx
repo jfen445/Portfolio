@@ -1,10 +1,7 @@
 import * as React from 'react';
 import './styles.css';
-import profileImage from '../images/profile.jpg';
 import SouthIcon from '@mui/icons-material/South';
-import Typewriter from 'typewriter-effect';
 import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
 import data from './particles.js';
 import { loadSlim } from 'tsparticles-slim';
 

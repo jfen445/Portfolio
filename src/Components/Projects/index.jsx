@@ -3,7 +3,7 @@ import SwiperComponent from './SwiperComponent';
 import './styles.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard } from 'swiper/modules';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -12,10 +12,39 @@ import VPS from '../images/VPS.png';
 import Dashboard from '../images/Dashboard.png';
 import Weigh9 from '../images/Weigh9.png';
 import Pokestore from '../images/Pokestore.png';
+import PromptVerse from '../images/promtverse.png';
 
 // Import Swiper styles
 
-const Projects = ({ scrollRef, scrollToDiv }) => {
+const data = [
+  {
+    image: PromptVerse,
+    name: 'PromptVerse',
+    description: 'blah blah blah',
+  },
+  {
+    image: Weigh9,
+    name: 'Weigh9',
+    description: 'blah blah blah',
+  },
+  {
+    image: Dashboard,
+    name: 'My Dashboard',
+    description: 'blah blah blah',
+  },
+  {
+    image: Pokestore,
+    name: 'Pokestore',
+    description: 'blah blah blah',
+  },
+  {
+    image: VPS,
+    name: 'Virtual Patient Simulator',
+    description: 'blah blah blah',
+  },
+];
+
+const Projects = ({ scrollRef }) => {
   return (
     <div className="container" ref={scrollRef}>
       <div className="left">
@@ -31,18 +60,15 @@ const Projects = ({ scrollRef, scrollToDiv }) => {
               modules={[Navigation, Pagination, Mousewheel, Keyboard]}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <SwiperComponent image={VPS} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <SwiperComponent image={Dashboard} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <SwiperComponent image={Weigh9} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <SwiperComponent image={Pokestore} />
-              </SwiperSlide>
+              {data.map((project) => (
+                <SwiperSlide>
+                  <SwiperComponent
+                    image={project.image}
+                    name={project.name}
+                    description={project.description}
+                  />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </section>
