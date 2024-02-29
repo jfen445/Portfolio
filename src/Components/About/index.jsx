@@ -55,7 +55,7 @@ const About = ({ scrollToProject }) => {
             creating solutions is what drives me in this industry.
           </p>
           <p>
-            I have a passion for writing clean code. This is directly translated into my interest of
+            I have a passion for writing clean code. This directly translated into my interest of
             designing and creating smooth and seamless websites and applications.
           </p>
 
