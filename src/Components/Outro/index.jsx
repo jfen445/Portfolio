@@ -6,6 +6,7 @@ import { loadSlim } from 'tsparticles-slim';
 
 const Outro = ({ scrollToDiv }) => {
   const particlesInit = React.useCallback(async (engine) => {
+    console.log(engine);
     await loadSlim(engine);
   }, []);
 

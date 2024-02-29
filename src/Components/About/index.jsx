@@ -1,6 +1,5 @@
 import * as React from 'react';
 import './styles.css';
-import AboutImage from '../images/about.jpg';
 import SouthIcon from '@mui/icons-material/South';
 import Headshot from '../images/headshot.png';
 import LinkedIn from '../images/Linkedin.png';

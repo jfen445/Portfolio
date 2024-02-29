@@ -14,33 +14,33 @@ import Weigh9 from '../images/Weigh9.png';
 import Pokestore from '../images/Pokestore.png';
 import PromptVerse from '../images/promtverse.png';
 
-// Import Swiper styles
-
 const data = [
   {
     image: PromptVerse,
     name: 'PromptVerse',
-    description: 'blah blah blah',
+    description:
+      'PromptVerse leverages AI in creating a social networking website for aspiring digital artists',
   },
   {
     image: Weigh9,
     name: 'Weigh9',
-    description: 'blah blah blah',
+    description: 'A modern, timeless, and well-functioning smart scale system',
   },
   {
     image: Dashboard,
     name: 'My Dashboard',
-    description: 'blah blah blah',
+    description: 'A personalied dashboard with integration with multiple third-party applications',
   },
   {
     image: Pokestore,
     name: 'Pokestore',
-    description: 'blah blah blah',
+    description:
+      'A native Android application in Java to view and purchase 1st generation Pokémon cards',
   },
   {
     image: VPS,
     name: 'Virtual Patient Simulator',
-    description: 'blah blah blah',
+    description: 'A hospital simulator for the University of Auckland Faculty of Medicine',
   },
 ];
 
