@@ -13,10 +13,6 @@ const About = ({ scrollToProject }) => {
   return (
     <div className="container">
       <section className="left bg-about">
-        {/* <div className="card bg"></div>
-        <div className="card">
-          <img src={AboutImage} alt="" className="image" />
-        </div> */}
         <div className="info-section info-section-right">
           <img src={Headshot} alt="" className="headshot" />
           <p className="about">
